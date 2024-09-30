@@ -1,0 +1,90 @@
+.hover-div ,
+.hover-div-2 ,
+.hover-div-3 , 
+.hover-div-4 {
+    color: white; /* Text color */
+    padding: 20px; /* Add some padding */
+    position: relative; /* Positioning for the pseudo-element */
+    overflow: hidden; /* To hide the overflow */
+    width: 450px;
+    height: 300px;
+    margin-top: 45px;
+}
+.hover-div{
+    background-image: url('../assets/imgs/Lab_2.jpg') ;
+    background-size: cover;
+    background-position: center;
+}
+.hover-div-2{
+    background-image: url('../assets/imgs/nursing.jpg') ;
+    background-size: cover;
+    background-position: center;
+}
+
+.hover-div-3{
+    background-image: url('../assets/imgs/dentistry.jpg') ;
+    background-size: cover;
+    background-position: center;
+}
+.hover-div-4{
+    background-image: url('../assets/imgs/fineArts.jpg') ;
+    background-size: cover;
+    background-position: center;
+}
+
+.hover-div p , 
+.hover-div-2 p , 
+.hover-div-3 p , 
+.hover-div-4 p {
+    opacity: 0; /* Start hidden */
+    transition: opacity 0.5s ease; /* Transition for opacity */
+    position: relative; /* Ensure it is positioned correctly */
+    z-index: 1; /* Ensure text is above the overlay */
+}
+
+.hover-div::before , 
+.hover-div-2::before , 
+.hover-div-3::before , 
+.hover-div-4::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%; /* Start off-screen to the left */
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.59); /* Low density black */
+    transition: left 0.5s ease; /* Transition for the left property */
+    z-index: 0; /* Ensure overlay is below the text */
+}
+
+.hover-div:hover::before ,
+.hover-div-2:hover::before , 
+.hover-div-3:hover::before , 
+.hover-div-4:hover::before {
+    left: 0; /* Move into view on hover */
+}
+
+.hover-div:hover p , 
+.hover-div-2:hover p , 
+.hover-div-3:hover p , 
+.hover-div-4:hover p{
+    opacity: 1; /* Fade in text on hover */
+}
+
+.fade-in-link {
+    opacity: 0; /* Start hidden */
+    transition: opacity 0.5s ease; /* Transition for opacity */
+    position: relative; /* Ensure it is positioned correctly */
+    z-index: 1; /* Ensure text is above the overlay */
+    font-size: large;
+    color: rgb(180, 156, 215);
+    border-left: 4px solid rgb(255, 255, 255); /* Left border */
+    padding-left: 8px; 
+}
+
+.hover-div:hover .fade-in-link , 
+.hover-div-2:hover .fade-in-link , 
+.hover-div-3:hover .fade-in-link , 
+.hover-div-4:hover .fade-in-link {
+    opacity: 1; /* Show the link on hover */
+}
