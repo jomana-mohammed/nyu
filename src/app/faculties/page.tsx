@@ -1,7 +1,5 @@
 import '@/app/faculties/facultiesPage.css'
 import Link from 'next/link';
-import LabImg from '../assets/imgs/Lab_2.jpg';
-import NurseImg from '../assets/imgs/nursing.jpg';
 
 const FacultiesPage = () => {
     return(
@@ -38,7 +36,7 @@ const FacultiesPage = () => {
             <div className='border-4 border font-bold text-3xl text-gray-50' style={{width:'350px' , height:'450px'}}>
                 <p style={{marginTop:'26px', marginLeft:'40px'}}>Faculty of Dentistry</p>
                 <div className="hover-div-3" >
-                    <p className='text-xl'>The NYU College of Dentistry (NYU Dentistry) educates nearly ten percent of our nation's dentists. An evidence-based curriculum teaches students to rely on solid data to treat people throughout the lifespan.</p>
+                    <p className='text-xl'>The NYU College of Dentistry (NYU Dentistry) educates nearly ten percent of our nation&apos;s dentists. An evidence-based curriculum teaches students to rely on solid data to treat people throughout the lifespan.</p>
                     <div>
                         <Link href={'https://dental.nyu.edu/'} className='fade-in-link mt-2'>collage of Dentistry</Link>
                     </div>
@@ -49,7 +47,7 @@ const FacultiesPage = () => {
                 <p style={{marginTop:'26px', marginLeft:'40px'}}>Faculty of Fine Arts</p>
                 <div className="hover-div-4">
                     <p className='text-lg'>The Institute of Fine Arts is dedicated to graduate teaching and advanced research in the history of art, archaeology, and the conservation and technology of works of art. </p>
-                    <p className='text-lg'>Founded in 1932, NYU Meyers is the second-largest private university college of nursing in the US, & the quality characteristic of NYU.  </p>
+                    <p className='text-lg'>The Institute offers the degrees of Master of Arts and Doctor of Philosophy, M.S. in the Conservation of Historic and Artistic Works.  </p>
                     <div>
                         <Link href={'https://ifa.nyu.edu/'} className='fade-in-link mt-2'>collage of Fine Arts</Link>
                     </div>
