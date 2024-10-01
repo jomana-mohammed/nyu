@@ -9,7 +9,6 @@ import thirdImg from '@/app/assets/imgs/F-loOb8WMAAeXUy.jpg';
 import { StaticImageData } from 'next/image';
 import '@/app/students/students.css';
 
-
 interface ScrollBarProps {
     scrolledImg: StaticImageData;
     imgKey: string;
@@ -38,7 +37,7 @@ const StudentsPage = () => {
                 <div className="text-white m-8 bg-sky-900 flex hover:bg-purple-900 transition-colors duration-500" style={{ width: '800px', height: '200px' }}>
                     <div style={{ width: '800px', height: '200px' }}>
                         <h1 className="text-4xl m-4">Students Guides</h1>
-                        <p className="text-xl m-4">We're here to support you as you explore your personal, academic, and professional interests while at NYU. Here's where you can find our top tools, services, resources, and opportunities.</p>
+                        <p className="text-xl m-4">We&apos;re here to support you as you explore your personal, academic, and professional interests while at NYU. Here&apos;s where you can find our top tools, services, resources, and opportunities.</p>
                     </div>
                 </div>
             </div>
@@ -63,12 +62,6 @@ const StudentsPage = () => {
                                         style={{width:'400px' , height:'400px'}}
                                     />
                                 </div>
-                                {/* <figcaption className="pt-2 text-xs text-muted-foreground">
-                                    Photo by{" "}
-                                    <span className="font-semibold text-foreground">
-                                        {ScrolledImg.imgKey}
-                                    </span>
-                                </figcaption> */}
                             </figure>
                         ))}
                     </div>
