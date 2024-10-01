@@ -16,13 +16,13 @@ export default function Home() {
               <div className="bg-neutral-800 hover:bg-purple-900 transition-colors duration-500 m-8" style={{ width: '600px', height: '300px' }}>
                   <div style={{ width: '400px', height: '200px'}} className="m-6">
                     <p className="text-white text-2xl">
-                      We're here to support you as you explore your personal, academic, and professional interests while at NYU. Here's where you can find our top tools, services, resources, and opportunities.
+                      We&apos;re here to support you as you explore your personal, academic, and professional interests while at NYU. Here&apos;s where you can find our top tools, services, resources, and opportunities.
                     </p>
                   </div>
                   <div className="bg-neutral-900 hover:bg-purple-900 transition-colors duration-500 rounded-[6px] mb-4" style={{ width: '150px', marginLeft: '50px' }}>
                     <Link className="text-white text-xl mx-4"
                     href={'https://www.nyu.edu/about.html'}>
-                      Learn more 
+                      Learn more
                     </Link>
                   </div>
               </div>
@@ -35,7 +35,7 @@ export default function Home() {
             <div className="m-8 bg-sky-900 flex hover:bg-purple-900 transition-colors duration-500" style={{ width:'800px', height: '350px'}}>
               <div style={{width:'500px' , height:'300px'}}>
                 <h1 className="text-4xl m-4">Admissions</h1>
-                <p className="text-xl m-4">Since its inception, NYU has been a distinctly urban university, one that NYU founder, Albert Gallatin, called a university that is "in and of the city." Today, the University has evolved into a university that is "in and of the great cities of the world." NYU's global network comprises three degree-granting portal campuses: one in the heart of New York City, a second in Abu Dhabi, and a third in Shanghai.</p>
+                <p className="text-xl m-4">Since its inception, NYU has been a distinctly urban university, one that NYU founder, Albert Gallatin, called a university that is in and of the city. Today, the University has evolved into a university that is in and of the great cities of the world. NYU&apos;s global network comprises three degree-granting portal campuses: one in the heart of New York City, a second in Abu Dhabi, and a third in Shanghai.</p>
               </div>
               <div className="ml-4">
                 <Image style={{ width: '300px', height: '300px' , marginLeft:'70px' , marginTop:'-60px' }}  src={AdmissionsImg} alt="NYU image"></Image>
