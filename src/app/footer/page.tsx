@@ -25,7 +25,7 @@ return (
             </div>
 
             <div style={{marginLeft:'80px' , marginTop:'40px' }}>
-                <p className='text-white text-2xl font-bold'  style={{width:'250px'}} >Main Compuses</p>
+                <p className='text-white text-2xl font-bold'  style={{width:'250px'}} >Main Campuses</p>
                 <ul style={{marginLeft:'30px'}}>
                     <li className='mt-6'>
                         <a href="https://www.nyu.edu/" className="text-white transition-colors duration-500  text-lg font-bold hover:text-yellow-300">NewYork</a>
