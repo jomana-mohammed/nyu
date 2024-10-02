@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArchway } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';
 
+
 const NavHeader = () => {
 
 return (
@@ -21,10 +22,10 @@ return (
             <a href="/faculties" className="text-white transition-colors duration-500  text-lg font-bold hover:text-yellow-300">Faculties</a>
         </li>
         <li >
-            <a href="/" className="text-white transition-colors duration-500  text-lg font-bold hover:text-yellow-300">Academics</a>
+            <a href="/" className="text-white transition-colors duration-500  text-lg font-bold hover:text-yellow-300">Employees</a>
         </li>
         <li >
-            <a href="/" className="text-white transition-colors duration-500  text-lg font-bold hover:text-yellow-300">Researches</a>
+            <a href="/researches" className="text-white transition-colors duration-500  text-lg font-bold hover:text-yellow-300">Researches</a>
         </li>
         </ul>
 
