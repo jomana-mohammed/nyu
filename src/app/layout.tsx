@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import NavHeader from "./navHeader/page";
-import {Playfair_Display} from '@next/font/google';
 import FooterPage from "./footer/page";
 
 export const metadata: Metadata = {

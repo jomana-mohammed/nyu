@@ -1,6 +1,7 @@
-.hover-div ,
-.hover-div-2 ,
-.hover-div-3 , 
+/* General styles for all hover-div classes */
+.hover-div,
+.hover-div-2,
+.hover-div-3,
 .hover-div-4 {
     color: white; /* Text color */
     padding: 20px; /* Add some padding */
@@ -9,82 +10,133 @@
     width: 450px;
     height: 300px;
     margin-top: 45px;
-}
-.hover-div{
-    background-image: url('../assets/imgs/Lab_2.jpg') ;
-    background-size: cover;
-    background-position: center;
-}
-.hover-div-2{
-    background-image: url('../assets/imgs/nursing.jpg') ;
     background-size: cover;
     background-position: center;
 }
 
-.hover-div-3{
-    background-image: url('../assets/imgs/dentistry.jpg') ;
-    background-size: cover;
-    background-position: center;
-}
-.hover-div-4{
-    background-image: url('../assets/imgs/fineArts.jpg') ;
-    background-size: cover;
-    background-position: center;
+/* Individual background images for each hover-div */
+.hover-div {
+    background-image: url('../assets/imgs/Lab_2.jpg');
 }
 
-.hover-div p , 
-.hover-div-2 p , 
-.hover-div-3 p , 
+.hover-div-2 {
+    background-image: url('../assets/imgs/nursing.jpg');
+}
+
+.hover-div-3 {
+    background-image: url('../assets/imgs/dentistry.jpg');
+}
+
+.hover-div-4 {
+    background-image: url('../assets/imgs/fineArts.jpg');
+}
+
+/* Text styles within the hover divs */
+.hover-div p, 
+.hover-div-2 p, 
+.hover-div-3 p, 
 .hover-div-4 p {
     opacity: 0; /* Start hidden */
-    transition: opacity 0.5s ease; /* Transition for opacity */
+    transition: opacity 0.5s ease; /* Smooth opacity transition */
     position: relative; /* Ensure it is positioned correctly */
-    z-index: 1; /* Ensure text is above the overlay */
+    z-index: 1; /* Text above overlay */
 }
 
-.hover-div::before , 
-.hover-div-2::before , 
-.hover-div-3::before , 
-.hover-div-4::before{
+/* Overlay effect for all hover-divs */
+.hover-div::before, 
+.hover-div-2::before, 
+.hover-div-3::before, 
+.hover-div-4::before {
     content: '';
     position: absolute;
     top: 0;
-    left: -100%; /* Start off-screen to the left */
+    left: -100%; /* Start off-screen */
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.59); /* Low density black */
-    transition: left 0.5s ease; /* Transition for the left property */
+    background: rgba(0, 0, 0, 0.59); /* Black overlay with transparency */
+    transition: left 0.5s ease; /* Slide-in effect */
     z-index: 0; /* Ensure overlay is below the text */
 }
 
-.hover-div:hover::before ,
-.hover-div-2:hover::before , 
-.hover-div-3:hover::before , 
+/* Hover effects to show overlay and text */
+.hover-div:hover::before, 
+.hover-div-2:hover::before, 
+.hover-div-3:hover::before, 
 .hover-div-4:hover::before {
-    left: 0; /* Move into view on hover */
+    left: 0; /* Bring overlay into view */
 }
 
-.hover-div:hover p , 
-.hover-div-2:hover p , 
-.hover-div-3:hover p , 
-.hover-div-4:hover p{
-    opacity: 1; /* Fade in text on hover */
+.hover-div:hover p, 
+.hover-div-2:hover p, 
+.hover-div-3:hover p, 
+.hover-div-4:hover p {
+    opacity: 1; /* Fade in text */
 }
 
+/* Fade-in link specific styles */
 .fade-in-link {
     opacity: 0; /* Start hidden */
-    transition: opacity 0.5s ease; /* Transition for opacity */
-    position: relative; /* Ensure it is positioned correctly */
-    z-index: 1; /* Ensure text is above the overlay */
+    transition: opacity 0.5s ease; /* Smooth opacity transition */
+    position: relative; /* Ensure correct positioning */
+    z-index: 1; /* Above overlay */
     font-size: large;
-    color: rgb(180, 156, 215);
+    color: rgb(180, 156, 215); /* Link color */
     border-left: 4px solid rgb(255, 255, 255); /* Left border */
     padding-left: 8px; 
 }
 
-.hover-div:hover .fade-in-link , 
-.hover-div-2:hover .fade-in-link , 
-.hover-div-3:hover .fade-in-link , 
+/* Hover effect to reveal the link */
+.hover-div:hover .fade-in-link, 
+.hover-div-2:hover .fade-in-link, 
+.hover-div-3:hover .fade-in-link, 
 .hover-div-4:hover .fade-in-link {
-    opacity: 1; /* Show the link on hover */
+    opacity: 1; /* Show link on hover */
 }
+
+/* Responsive styles for mobile screens */
+@media (max-width: 768px) {
+    .hover-div, 
+    .hover-div-2, 
+    .hover-div-3, 
+    .hover-div-4 {
+        width: 100%; /* Full width for mobile screens */
+        height: auto; /* Auto height for responsiveness */
+        padding: 15px; /* Adjust padding */
+        margin-top: 20px; /* Adjust margin */
+    }
+
+    .hover-div p, 
+    .hover-div-2 p, 
+    .hover-div-3 p, 
+    .hover-div-4 p {
+        font-size: 1rem; /* Smaller font size for mobile */
+    }
+
+    .fade-in-link {
+        font-size: 1rem; /* Smaller link font size */
+    }
+}
+
+@media (max-width: 480px) {
+    .hover-div, 
+    .hover-div-2, 
+    .hover-div-3, 
+    .hover-div-4 {
+        width: 100%; /* Full width on very small screens */
+        height: auto; /* Auto height to adjust to content */
+        padding: 10px; /* Smaller padding */
+    }
+
+    .hover-div p, 
+    .hover-div-2 p, 
+    .hover-div-3 p, 
+    .hover-div-4 p {
+        font-size: 0.9rem; /* Even smaller font size */
+    }
+
+    .fade-in-link {
+        font-size: 0.9rem; /* Smaller link font size for small screens */
+    }
+}
+
+
