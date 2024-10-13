@@ -5,7 +5,6 @@ import AdmissionsImg from './assets/imgs/admissions.jpeg';
 import AcademicImg from './assets/imgs/maxresdefault.jpg';
 import Link from "next/link";
 
-
 export default function Home() {
 
   return (
@@ -19,7 +18,7 @@ export default function Home() {
                       We&apos;re here to support you as you explore your personal, academic, and professional interests while at NYU. Here&apos;s where you can find our top tools, services, resources, and opportunities.
                     </p>
                   </div>
-                  <div className="bg-neutral-900 hover:bg-purple-900 transition-colors duration-500 rounded-[6px] mb-4" style={{ width: '150px', marginLeft: '50px' }}>
+                  <div className="bg-neutral-900 hover:bg-purple-900 transition-colors duration-500 rounded-[6px]" style={{ width: '150px', marginLeft: '50px' , marginTop:'-40px' }}>
                     <Link className="text-white text-xl mx-4"
                     href={'https://www.nyu.edu/about.html'}>
                       Learn more

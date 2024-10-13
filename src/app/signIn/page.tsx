@@ -42,7 +42,7 @@ const RegisterPage =()=> {
 
     return (
         <div className="flex items-center justify-center min-h-screen">
-                <div className="bg-purple-100 p-4 rounded text-2xl " style={{ width: '600px', height: '400px' }}>
+                <div className="bg-gray-50 p-6 rounded text-2xl " style={{ width: '600px', height: '400px' }}>
                     <h1 className="text-3xl font-bold flex items-center justify-center ">Sign In</h1>
                     <Form {...form}>
                         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8 p-2 mt-4">
@@ -74,7 +74,7 @@ const RegisterPage =()=> {
                             
                             <div className="flex items-center justify-center">
                             <Button
-                                className="mt-8 bg-gray-950 transition-colors align-center  inline-flex items-center justify-center duration-500 text-gray-50 py-2 px-2 rounded-sm text-xl font-bold hover:text-yellow-300 inline-block"
+                                className="bg-gray-800 text-gray-50 p-2 transition-colors duration-500 rounded-sm text-lg font-bold hover:text-yellow-300"
                                 style={{width:'100px'}}
                                 >
                                 Submit

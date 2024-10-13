@@ -1,0 +1,8 @@
+.custom-hover {
+    width: 700px; /* Initial width */
+}
+
+.custom-hover:hover {
+    width: 800px; /* Width on hover */
+    transition: width 0.5s ease; 
+}

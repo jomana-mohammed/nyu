@@ -5,7 +5,6 @@
 :root {
   --bg-color: linear-gradient(to right, rgba(29, 29, 82, 0.604), rgba(67, 25, 97, 0.774), rgb(155, 70, 155));
   /* --bg-color: linear-gradient(to right, rgba(4, 4, 17, 0.604), rgba(168, 50, 150, 0.774), rgb(54, 7, 54)); */
-
 }
 
 body {
