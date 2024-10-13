@@ -16,7 +16,7 @@ export interface EventsPageProps {
 
 const EventsPage: React.FC<EventsPageProps> = async() => {
 
-    const res = await fetch('https://www.nyu.edu/feeds/events/json/group/NYU-Libraries/start_date/10062024/end_date/02062025');
+    const res = await fetch('https://www.nyu.edu/feeds/events/json/group/NYU-Libraries/start_date/10132024/end_date/02132025');
     const eventData = await res.json();
 
     return (

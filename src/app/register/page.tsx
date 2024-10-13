@@ -50,7 +50,7 @@ const RegisterPage =()=> {
 
     return (
         <div className="flex items-center justify-center min-h-screen">
-                <div className="bg-gray-50 p-6 rounded text-2xl" style={{ width: '600px', height: '650px'}}>
+                <div className="bg-gray-50 p-6 rounded text-2xl mt-8"  style={{ width: '600px', height: '650px'}}>
                     <h1 className="text-3xl font-bold flex items-center justify-center ">Register</h1>
                     <Form {...form}>
                         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8 p-2 mt-4">

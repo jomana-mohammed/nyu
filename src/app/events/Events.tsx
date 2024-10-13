@@ -15,14 +15,11 @@ import {
 import {
     Pagination,
     PaginationContent,
-    PaginationEllipsis,
     PaginationItem,
     PaginationLink,
     PaginationNext,
     PaginationPrevious,
 } from "@/components/ui/pagination"
-
-import '@/app/events/events.css'
 
 import {
     Dialog,
@@ -41,7 +38,7 @@ const Events: React.FC<EventsPageProps> = ({events}) => {
     const [currentPage, setCurrentPage] = useState(1);
     const itemsPerPage = 7;
 
-    const today = new Date("2024-10-08").toLocaleDateString('en-US', { month: 'long', day: 'numeric' });
+    const today = new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric' });
     const todayEvents = events.filter((event:any) => event.date === today);
     const currentEvents = showTodaysEvents ? todayEvents : events;
 
@@ -127,7 +124,7 @@ const Events: React.FC<EventsPageProps> = ({events}) => {
                 </div>
             ))
         ) : (
-            <p className="text-2xl">No events available.</p>
+            <p className="text-2xl">No events available today.</p>
         )}
     </div>
 

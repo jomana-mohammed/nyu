@@ -10,6 +10,8 @@
 body {
   background: var(--bg-color);
   width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover; /* Optional: to cover the entire area */
 }
 
 @layer base {

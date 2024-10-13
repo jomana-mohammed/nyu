@@ -43,7 +43,7 @@ const StudentsPage = () => {
     return (
         <div className='flex flex-col items-center justify-center'>
         <div className="flex flex-col items-center justify-center mt-16 md:flex-row">
-            <Image src={studentsImg} alt='students img' className="w-48 h-48" />
+            <Image src={studentsImg} alt='students img' className="w-48 h-52" />
             <div className="text-white m-4 bg-sky-900 flex hover:bg-purple-900 transition-colors duration-500 w-full max-w-4xl h-52">
                 <div className="flex flex-col justify-center h-full">
                     <h1 className="text-4xl m-4">Students Guides</h1>
