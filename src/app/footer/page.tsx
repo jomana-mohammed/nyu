@@ -52,7 +52,7 @@ return (
                 </li>
             </ul>
 
-            <div className="flex flex-col items-start md:ml-8 mt-8 md:mt-0" style={{marginLeft:'135px' , marginTop:'20px'}}>
+            <div className="flex flex-col items-start md:ml-8 mt-8 md:mt-0 justify-self-end" style={{ marginTop:'20px'}}>
                 <p className='text-white text-xl font-bold' style={{marginLeft:'45px'}}>Contact with NYU</p>
                 <div className='flex space-x-6 mt-4'>
                     <a href='https://www.facebook.com/NYU'>
