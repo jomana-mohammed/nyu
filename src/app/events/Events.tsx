@@ -32,6 +32,7 @@ import {
 } from "@/components/ui/dialog"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
+import { Toaster , toast } from "sonner";
 
 const Events: React.FC<EventsPageProps> = ({events}) => {
     const [showTodaysEvents, setShowTodaysEvents] = useState(false);
@@ -60,6 +61,20 @@ const Events: React.FC<EventsPageProps> = ({events}) => {
         if (currentPage > 1) 
             setCurrentPage(currentPage - 1);
     };
+
+
+    const[showToaster , setShowToaster] = useState(false);
+
+    const onSubmit=()=>{
+        
+        setShowToaster(true);
+
+        if (showToaster) {
+            toast("You booked successfully for the event", {
+                duration: 3000
+            });
+        }
+    }
 
     return (
 <div className="p-8">
@@ -112,11 +127,11 @@ const Events: React.FC<EventsPageProps> = ({events}) => {
                                     </div>
                                     <div className="grid grid-cols-4 items-center gap-4">
                                         <Label htmlFor="nid" className="text-right">National ID</Label>
-                                        <Input id="nid" className="col-span-3" />
+                                        <Input id="nid" type="number" className="col-span-3" />
                                     </div>
                                 </div>
                                 <DialogFooter>
-                                    <Button type="submit">Submit</Button>
+                                    <Button type="submit" onClick={onSubmit}>Submit</Button>
                                 </DialogFooter>
                             </DialogContent>
                         </Dialog>
@@ -150,7 +165,13 @@ const Events: React.FC<EventsPageProps> = ({events}) => {
             </PaginationContent>
         </Pagination>
     </div>
+
+            {   
+                showToaster &&  (
+                <Toaster/>)
+            }
 </div>
+
 
     );
 
