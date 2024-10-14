@@ -1,20 +1,16 @@
-
 import Events from "./Events";
 
-export interface EventData {
+interface EventData {
     id: number;
     title: string;
     date: string;
     date_time: string;
     location: string;
 }
-
 export interface EventsPageProps {
     events: EventData[]; 
 }
-
-
-const EventsPage: React.FC<EventsPageProps> = async() => {
+const EventsPage: React.FC = async() => {
 
     const today = new Date();
 
