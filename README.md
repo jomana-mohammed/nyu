@@ -32,4 +32,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 ## See the Websit!
 
-Check out the website through --> [Next js project + api integration ](https://github.com/jomana-mohammed/nyu)
+Check out the website through --> [https://github.com/jomana-mohammed/nyu](https://github.com/jomana-mohammed/nyu)
